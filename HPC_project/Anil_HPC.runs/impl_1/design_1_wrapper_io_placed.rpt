@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
-| Tool Version              : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-| Date                      : Sat May 11 18:47:52 2019
-| Host                      : IITI running 64-bit CentOS release 6.9 (Final)
+| Tool Version              : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date                      : Sat Oct  3 17:58:34 2020
+| Host                      : DESKTOP-8MKJI6D running 64-bit major release  (build 9200)
 | Command                   : report_io -file design_1_wrapper_io_placed.rpt
 | Design                    : design_1_wrapper
 | Device                    : xc7z010
@@ -169,7 +169,7 @@ Table of Contents
 | G12        |                   |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | G13        |                   |            | VCCINT                  | VCCINT        |                   |         |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | G14        |                   | High Range | IO_0_35                 | User IO       |                   |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| G15        | ap_start          | High Range | IO_L19N_T3_VREF_35      | INPUT         | LVCMOS33          |      35 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| G15        | ap_start_1        | High Range | IO_L19N_T3_VREF_35      | INPUT         | LVCMOS33          |      35 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | G16        |                   |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | G17        |                   | High Range | IO_L16P_T2_35           | User IO       |                   |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | G18        |                   | High Range | IO_L16N_T2_35           | User IO       |                   |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |

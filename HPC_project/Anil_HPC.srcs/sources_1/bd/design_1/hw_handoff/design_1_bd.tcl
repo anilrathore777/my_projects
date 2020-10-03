@@ -167,7 +167,7 @@ proc create_root_design { parentCell } {
   set FIXED_IO [ create_bd_intf_port -mode Master -vlnv xilinx.com:display_processing_system7:fixedio_rtl:1.0 FIXED_IO ]
 
   # Create ports
-  set ap_start [ create_bd_port -dir I ap_start ]
+  set ap_start_1 [ create_bd_port -dir I ap_start_1 ]
 
   # Create instance: axi_bram_ctrl_0, and set properties
   set axi_bram_ctrl_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.0 axi_bram_ctrl_0 ]
@@ -301,6 +301,9 @@ proc create_root_design { parentCell } {
    CONFIG.Write_Width_B {32} \
    CONFIG.use_bram_block {Stand_Alone} \
  ] $blk_mem_gen_2
+
+  # Create instance: mmult_0, and set properties
+  set mmult_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:mmult:1.0 mmult_0 ]
 
   # Create instance: processing_system7_0, and set properties
   set processing_system7_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0 ]
@@ -693,9 +696,6 @@ proc create_root_design { parentCell } {
   # Create instance: rst_ps7_0_100M, and set properties
   set rst_ps7_0_100M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_ps7_0_100M ]
 
-  # Create instance: sari_mmult_0, and set properties
-  set sari_mmult_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:sari_mmult:1.0 sari_mmult_0 ]
-
   # Create interface connections
   connect_bd_intf_net -intf_net axi_smc_M00_AXI [get_bd_intf_pins axi_bram_ctrl_0/S_AXI] [get_bd_intf_pins axi_smc/M00_AXI]
   connect_bd_intf_net -intf_net axi_smc_M01_AXI [get_bd_intf_pins axi_bram_ctrl_1/S_AXI] [get_bd_intf_pins axi_smc/M01_AXI]
@@ -705,8 +705,8 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net processing_system7_0_M_AXI_GP0 [get_bd_intf_pins axi_smc/S00_AXI] [get_bd_intf_pins processing_system7_0/M_AXI_GP0]
 
   # Create port connections
-  connect_bd_net -net Net [get_bd_pins axi_bram_ctrl_0/s_axi_aclk] [get_bd_pins axi_bram_ctrl_1/s_axi_aclk] [get_bd_pins axi_bram_ctrl_2/s_axi_aclk] [get_bd_pins axi_smc/aclk] [get_bd_pins blk_mem_gen_0/clkb] [get_bd_pins blk_mem_gen_1/clkb] [get_bd_pins blk_mem_gen_2/clka] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins rst_ps7_0_100M/slowest_sync_clk] [get_bd_pins sari_mmult_0/ap_clk]
-  connect_bd_net -net ap_start_1 [get_bd_ports ap_start] [get_bd_pins sari_mmult_0/ap_start]
+  connect_bd_net -net Net [get_bd_pins axi_bram_ctrl_0/s_axi_aclk] [get_bd_pins axi_bram_ctrl_1/s_axi_aclk] [get_bd_pins axi_bram_ctrl_2/s_axi_aclk] [get_bd_pins axi_smc/aclk] [get_bd_pins blk_mem_gen_0/clkb] [get_bd_pins blk_mem_gen_1/clkb] [get_bd_pins blk_mem_gen_2/clka] [get_bd_pins mmult_0/ap_clk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins rst_ps7_0_100M/slowest_sync_clk]
+  connect_bd_net -net ap_start_1_1 [get_bd_ports ap_start_1] [get_bd_pins mmult_0/ap_start]
   connect_bd_net -net axi_bram_ctrl_0_bram_addr_a [get_bd_pins axi_bram_ctrl_0/bram_addr_a] [get_bd_pins bit_shift_0/add_in]
   connect_bd_net -net axi_bram_ctrl_0_bram_clk_a [get_bd_pins axi_bram_ctrl_0/bram_clk_a] [get_bd_pins blk_mem_gen_0/clka]
   connect_bd_net -net axi_bram_ctrl_0_bram_en_a [get_bd_pins axi_bram_ctrl_0/bram_en_a] [get_bd_pins blk_mem_gen_0/ena]
@@ -723,20 +723,20 @@ proc create_root_design { parentCell } {
   connect_bd_net -net bit_shift_0_add_out [get_bd_pins bit_shift_0/add_out] [get_bd_pins blk_mem_gen_0/addra]
   connect_bd_net -net bit_shift_1_add_out [get_bd_pins bit_shift_1/add_out] [get_bd_pins blk_mem_gen_1/addra]
   connect_bd_net -net bit_shift_2_add_out [get_bd_pins bit_shift_2/add_out] [get_bd_pins blk_mem_gen_2/addrb]
-  connect_bd_net -net blk_mem_gen_0_doutb [get_bd_pins blk_mem_gen_0/doutb] [get_bd_pins sari_mmult_0/A_q0]
-  connect_bd_net -net blk_mem_gen_1_doutb [get_bd_pins blk_mem_gen_1/doutb] [get_bd_pins sari_mmult_0/B_q0]
+  connect_bd_net -net blk_mem_gen_0_doutb [get_bd_pins blk_mem_gen_0/doutb] [get_bd_pins mmult_0/A_q0]
+  connect_bd_net -net blk_mem_gen_1_doutb [get_bd_pins blk_mem_gen_1/doutb] [get_bd_pins mmult_0/B_q0]
   connect_bd_net -net blk_mem_gen_2_doutb [get_bd_pins axi_bram_ctrl_2/bram_rddata_a] [get_bd_pins blk_mem_gen_2/doutb]
+  connect_bd_net -net mmult_0_A_address0 [get_bd_pins blk_mem_gen_0/addrb] [get_bd_pins mmult_0/A_address0]
+  connect_bd_net -net mmult_0_A_ce0 [get_bd_pins blk_mem_gen_0/enb] [get_bd_pins mmult_0/A_ce0]
+  connect_bd_net -net mmult_0_B_address0 [get_bd_pins blk_mem_gen_1/addrb] [get_bd_pins mmult_0/B_address0]
+  connect_bd_net -net mmult_0_B_ce0 [get_bd_pins blk_mem_gen_1/enb] [get_bd_pins mmult_0/B_ce0]
+  connect_bd_net -net mmult_0_C_address0 [get_bd_pins blk_mem_gen_2/addra] [get_bd_pins mmult_0/C_address0]
+  connect_bd_net -net mmult_0_C_ce0 [get_bd_pins blk_mem_gen_2/ena] [get_bd_pins mmult_0/C_ce0]
+  connect_bd_net -net mmult_0_C_d0 [get_bd_pins blk_mem_gen_2/dina] [get_bd_pins mmult_0/C_d0]
+  connect_bd_net -net mmult_0_C_we0 [get_bd_pins blk_mem_gen_2/wea] [get_bd_pins mmult_0/C_we0]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_100M/ext_reset_in]
   connect_bd_net -net rst_ps7_0_100M_peripheral_aresetn [get_bd_pins axi_bram_ctrl_0/s_axi_aresetn] [get_bd_pins axi_bram_ctrl_1/s_axi_aresetn] [get_bd_pins axi_bram_ctrl_2/s_axi_aresetn] [get_bd_pins axi_smc/aresetn] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
-  connect_bd_net -net rst_ps7_0_100M_peripheral_reset [get_bd_pins rst_ps7_0_100M/peripheral_reset] [get_bd_pins sari_mmult_0/ap_rst]
-  connect_bd_net -net sari_mmult_0_A_address0 [get_bd_pins blk_mem_gen_0/addrb] [get_bd_pins sari_mmult_0/A_address0]
-  connect_bd_net -net sari_mmult_0_A_ce0 [get_bd_pins blk_mem_gen_0/enb] [get_bd_pins sari_mmult_0/A_ce0]
-  connect_bd_net -net sari_mmult_0_B_address0 [get_bd_pins blk_mem_gen_1/addrb] [get_bd_pins sari_mmult_0/B_address0]
-  connect_bd_net -net sari_mmult_0_B_ce0 [get_bd_pins blk_mem_gen_1/enb] [get_bd_pins sari_mmult_0/B_ce0]
-  connect_bd_net -net sari_mmult_0_C_address0 [get_bd_pins blk_mem_gen_2/addra] [get_bd_pins sari_mmult_0/C_address0]
-  connect_bd_net -net sari_mmult_0_C_ce0 [get_bd_pins blk_mem_gen_2/ena] [get_bd_pins sari_mmult_0/C_ce0]
-  connect_bd_net -net sari_mmult_0_C_d0 [get_bd_pins blk_mem_gen_2/dina] [get_bd_pins sari_mmult_0/C_d0]
-  connect_bd_net -net sari_mmult_0_C_we0 [get_bd_pins blk_mem_gen_2/wea] [get_bd_pins sari_mmult_0/C_we0]
+  connect_bd_net -net rst_ps7_0_100M_peripheral_reset [get_bd_pins mmult_0/ap_rst] [get_bd_pins rst_ps7_0_100M/peripheral_reset]
 
   # Create address segments
   create_bd_addr_seg -range 0x00002000 -offset 0x40000000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_bram_ctrl_0/S_AXI/Mem0] SEG_axi_bram_ctrl_0_Mem0

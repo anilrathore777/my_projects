@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-| Date             : Sat May 11 18:48:43 2019
-| Host             : IITI running 64-bit CentOS release 6.9 (Final)
+| Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date             : Sat Oct  3 18:00:03 2020
+| Host             : DESKTOP-8MKJI6D running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
 | Device           : xc7z010clg400-1
@@ -53,8 +53,8 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.022 |        3 |       --- |             --- |
-| Slice Logic              |     0.016 |    11355 |       --- |             --- |
-|   LUT as Logic           |     0.014 |     4412 |     17600 |           25.07 |
+| Slice Logic              |     0.016 |    11356 |       --- |             --- |
+|   LUT as Logic           |     0.014 |     4414 |     17600 |           25.08 |
 |   LUT as Distributed RAM |    <0.001 |      388 |      6000 |            6.47 |
 |   Register               |    <0.001 |     4536 |     35200 |           12.89 |
 |   CARRY4                 |    <0.001 |       32 |      4400 |            0.73 |
@@ -1000,7 +1000,7 @@ Table of Contents
 |                 gen_si_handler.gen_request_counters.gen_req_counter[2].inst_req_counter           |    <0.001 |
 |           s00_r_node                                                                              |     0.002 |
 |             inst                                                                                  |     0.002 |
-|               inst_mi_handler                                                                     |     0.001 |
+|               inst_mi_handler                                                                     |     0.002 |
 |                 gen_normal_area.gen_node_prog_full.inst_node_prog_full                            |    <0.001 |
 |                   gen_xpm_memory_fifo.inst_fifo                                                   |    <0.001 |
 |                     gen_mem_rep[0].inst_rd_addrb                                                  |    <0.001 |
@@ -1095,13 +1095,15 @@ Table of Contents
 |             valid.cstr                                                                            |    <0.001 |
 |               ramloop[0].ram.r                                                                    |    <0.001 |
 |                 prim_noinit.ram                                                                   |    <0.001 |
-|     blk_mem_gen_2                                                                                 |     0.002 |
-|       U0                                                                                          |     0.002 |
-|         inst_blk_mem_gen                                                                          |     0.002 |
-|           gnbram.gnativebmg.native_blk_mem_gen                                                    |     0.002 |
-|             valid.cstr                                                                            |     0.002 |
-|               ramloop[0].ram.r                                                                    |     0.002 |
-|                 prim_noinit.ram                                                                   |     0.002 |
+|     blk_mem_gen_2                                                                                 |     0.001 |
+|       U0                                                                                          |     0.001 |
+|         inst_blk_mem_gen                                                                          |     0.001 |
+|           gnbram.gnativebmg.native_blk_mem_gen                                                    |     0.001 |
+|             valid.cstr                                                                            |     0.001 |
+|               ramloop[0].ram.r                                                                    |     0.001 |
+|                 prim_noinit.ram                                                                   |     0.001 |
+|     mmult_0                                                                                       |     0.005 |
+|       inst                                                                                        |     0.005 |
 |     processing_system7_0                                                                          |     1.557 |
 |       inst                                                                                        |     1.557 |
 |     rst_ps7_0_100M                                                                                |    <0.001 |
@@ -1111,8 +1113,6 @@ Table of Contents
 |           ACTIVE_LOW_EXT.ACT_LO_EXT                                                               |    <0.001 |
 |         SEQ                                                                                       |    <0.001 |
 |           SEQ_COUNTER                                                                             |    <0.001 |
-|     sari_mmult_0                                                                                  |     0.005 |
-|       U0                                                                                          |     0.005 |
 +---------------------------------------------------------------------------------------------------+-----------+
 
 

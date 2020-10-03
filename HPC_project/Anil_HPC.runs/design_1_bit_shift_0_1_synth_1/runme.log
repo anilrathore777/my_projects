@@ -4,7 +4,7 @@
 
 
 ****** Vivado v2017.4 (64-bit)
-  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
   **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 
@@ -14,15 +14,15 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 23261 
+INFO: Helper process launched with PID 9384 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1397.578 ; gain = 87.992 ; free physical = 145 ; free virtual = 21148
+Starting RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 422.129 ; gain = 104.070
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_bit_shift_0_1' [/prog/Xilinx/sari_vivado/sari_vivado.srcs/sources_1/bd/design_1/ip/design_1_bit_shift_0_1/synth/design_1_bit_shift_0_1.vhd:63]
-INFO: [Synth 8-3491] module 'bit_shift' declared at '/prog/Xilinx/sari_vivado/sari_vivado.srcs/sources_1/new/bit_shift.vhd:34' bound to instance 'U0' of component 'bit_shift' [/prog/Xilinx/sari_vivado/sari_vivado.srcs/sources_1/bd/design_1/ip/design_1_bit_shift_0_1/synth/design_1_bit_shift_0_1.vhd:79]
-INFO: [Synth 8-638] synthesizing module 'bit_shift' [/prog/Xilinx/sari_vivado/sari_vivado.srcs/sources_1/new/bit_shift.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'bit_shift' (1#1) [/prog/Xilinx/sari_vivado/sari_vivado.srcs/sources_1/new/bit_shift.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'design_1_bit_shift_0_1' (2#1) [/prog/Xilinx/sari_vivado/sari_vivado.srcs/sources_1/bd/design_1/ip/design_1_bit_shift_0_1/synth/design_1_bit_shift_0_1.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'design_1_bit_shift_0_1' [g:/my_projects/HPC_project/Anil_HPC.srcs/sources_1/bd/design_1/ip/design_1_bit_shift_0_1/synth/design_1_bit_shift_0_1.vhd:63]
+INFO: [Synth 8-3491] module 'bit_shift' declared at 'G:/my_projects/HPC_project/Anil_HPC.srcs/sources_1/new/bit_shift.vhd:34' bound to instance 'U0' of component 'bit_shift' [g:/my_projects/HPC_project/Anil_HPC.srcs/sources_1/bd/design_1/ip/design_1_bit_shift_0_1/synth/design_1_bit_shift_0_1.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'bit_shift' [G:/my_projects/HPC_project/Anil_HPC.srcs/sources_1/new/bit_shift.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'bit_shift' (1#1) [G:/my_projects/HPC_project/Anil_HPC.srcs/sources_1/new/bit_shift.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'design_1_bit_shift_0_1' (2#1) [g:/my_projects/HPC_project/Anil_HPC.srcs/sources_1/bd/design_1/ip/design_1_bit_shift_0_1/synth/design_1_bit_shift_0_1.vhd:63]
 WARNING: [Synth 8-3331] design bit_shift has unconnected port add_in[12]
 WARNING: [Synth 8-3331] design bit_shift has unconnected port add_in[11]
 WARNING: [Synth 8-3331] design bit_shift has unconnected port add_in[10]
@@ -35,7 +35,7 @@ WARNING: [Synth 8-3331] design bit_shift has unconnected port add_in[4]
 WARNING: [Synth 8-3331] design bit_shift has unconnected port add_in[1]
 WARNING: [Synth 8-3331] design bit_shift has unconnected port add_in[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1439.117 ; gain = 129.531 ; free physical = 310 ; free virtual = 21202
+Finished RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 474.699 ; gain = 156.641
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -45,7 +45,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1439.117 ; gain = 129.531 ; free physical = 308 ; free virtual = 21200
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 474.699 ; gain = 156.641
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -57,25 +57,25 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1719.871 ; gain = 0.000 ; free physical = 153 ; free virtual = 20526
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 708.262 ; gain = 0.012
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:01:09 . Memory (MB): peak = 1719.871 ; gain = 410.285 ; free physical = 350 ; free virtual = 20725
+Finished Constraint Validation : Time (s): cpu = 00:00:52 ; elapsed = 00:01:10 . Memory (MB): peak = 708.262 ; gain = 390.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:01:09 . Memory (MB): peak = 1719.871 ; gain = 410.285 ; free physical = 353 ; free virtual = 20728
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:52 ; elapsed = 00:01:10 . Memory (MB): peak = 708.262 ; gain = 390.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:01:09 . Memory (MB): peak = 1719.871 ; gain = 410.285 ; free physical = 359 ; free virtual = 20734
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:01:10 . Memory (MB): peak = 708.262 ; gain = 390.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:01:09 . Memory (MB): peak = 1719.871 ; gain = 410.285 ; free physical = 359 ; free virtual = 20734
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:52 ; elapsed = 00:01:10 . Memory (MB): peak = 708.262 ; gain = 390.203
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -122,7 +122,7 @@ WARNING: [Synth 8-3331] design design_1_bit_shift_0_1 has unconnected port add_i
 WARNING: [Synth 8-3331] design design_1_bit_shift_0_1 has unconnected port add_in[1]
 WARNING: [Synth 8-3331] design design_1_bit_shift_0_1 has unconnected port add_in[0]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:01:09 . Memory (MB): peak = 1719.871 ; gain = 410.285 ; free physical = 356 ; free virtual = 20731
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:12 . Memory (MB): peak = 708.262 ; gain = 390.203
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -134,13 +134,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:01:22 . Memory (MB): peak = 1719.871 ; gain = 410.285 ; free physical = 135 ; free virtual = 20363
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:20 ; elapsed = 00:01:40 . Memory (MB): peak = 777.145 ; gain = 459.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:01:22 . Memory (MB): peak = 1719.871 ; gain = 410.285 ; free physical = 135 ; free virtual = 20363
+Finished Timing Optimization : Time (s): cpu = 00:01:20 ; elapsed = 00:01:40 . Memory (MB): peak = 777.145 ; gain = 459.086
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -152,7 +152,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:01:22 . Memory (MB): peak = 1724.863 ; gain = 415.277 ; free physical = 133 ; free virtual = 20361
+Finished Technology Mapping : Time (s): cpu = 00:01:20 ; elapsed = 00:01:40 . Memory (MB): peak = 786.676 ; gain = 468.617
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -176,7 +176,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:01:23 . Memory (MB): peak = 1724.867 ; gain = 415.281 ; free physical = 202 ; free virtual = 20412
+Finished IO Insertion : Time (s): cpu = 00:01:22 ; elapsed = 00:01:42 . Memory (MB): peak = 786.676 ; gain = 468.617
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -189,7 +189,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:01:23 . Memory (MB): peak = 1724.867 ; gain = 415.281 ; free physical = 200 ; free virtual = 20410
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:22 ; elapsed = 00:01:42 . Memory (MB): peak = 786.676 ; gain = 468.617
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -201,25 +201,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:01:23 . Memory (MB): peak = 1724.867 ; gain = 415.281 ; free physical = 194 ; free virtual = 20404
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:22 ; elapsed = 00:01:42 . Memory (MB): peak = 786.676 ; gain = 468.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:01:23 . Memory (MB): peak = 1724.867 ; gain = 415.281 ; free physical = 194 ; free virtual = 20404
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:22 ; elapsed = 00:01:42 . Memory (MB): peak = 786.676 ; gain = 468.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:01:23 . Memory (MB): peak = 1724.867 ; gain = 415.281 ; free physical = 194 ; free virtual = 20404
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:22 ; elapsed = 00:01:42 . Memory (MB): peak = 786.676 ; gain = 468.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:01:23 . Memory (MB): peak = 1724.867 ; gain = 415.281 ; free physical = 194 ; free virtual = 20404
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:22 ; elapsed = 00:01:42 . Memory (MB): peak = 786.676 ; gain = 468.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -244,11 +244,11 @@ Report Instance Areas:
 |1     |top      |       |     0|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:01:23 . Memory (MB): peak = 1724.867 ; gain = 415.281 ; free physical = 194 ; free virtual = 20404
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:22 ; elapsed = 00:01:42 . Memory (MB): peak = 786.676 ; gain = 468.617
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 1724.867 ; gain = 134.527 ; free physical = 252 ; free virtual = 20461
-Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:01:23 . Memory (MB): peak = 1724.871 ; gain = 415.281 ; free physical = 252 ; free virtual = 20462
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:01:17 . Memory (MB): peak = 786.676 ; gain = 235.055
+Synthesis Optimization Complete : Time (s): cpu = 00:01:23 ; elapsed = 00:01:43 . Memory (MB): peak = 786.676 ; gain = 468.617
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -258,9 +258,9 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 14 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:01:25 . Memory (MB): peak = 1730.867 ; gain = 446.105 ; free physical = 217 ; free virtual = 20428
-INFO: [Common 17-1381] The checkpoint '/prog/Xilinx/sari_vivado/sari_vivado.runs/design_1_bit_shift_0_1_synth_1/design_1_bit_shift_0_1.dcp' has been generated.
-INFO: [Common 17-1381] The checkpoint '/prog/Xilinx/sari_vivado/sari_vivado.runs/design_1_bit_shift_0_1_synth_1/design_1_bit_shift_0_1.dcp' has been generated.
+synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:01:50 . Memory (MB): peak = 799.477 ; gain = 491.145
+INFO: [Common 17-1381] The checkpoint 'G:/my_projects/HPC_project/Anil_HPC.runs/design_1_bit_shift_0_1_synth_1/design_1_bit_shift_0_1.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'G:/my_projects/HPC_project/Anil_HPC.runs/design_1_bit_shift_0_1_synth_1/design_1_bit_shift_0_1.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_bit_shift_0_1_utilization_synth.rpt -pb design_1_bit_shift_0_1_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1740.875 ; gain = 0.000 ; free physical = 257 ; free virtual = 20470
-INFO: [Common 17-206] Exiting Vivado at Sat May 11 17:03:35 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 800.133 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Oct  3 17:42:13 2020...

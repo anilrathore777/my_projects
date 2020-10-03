@@ -60,7 +60,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -70,43 +69,44 @@ set rc [catch {
   set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir /prog/Xilinx/sari_vivado/sari_vivado.cache/wt [current_project]
-  set_property parent.project_path /prog/Xilinx/sari_vivado/sari_vivado.xpr [current_project]
+  set_property webtalk.parent_dir G:/my_projects/HPC_project/Anil_HPC.cache/wt [current_project]
+  set_property parent.project_path G:/my_projects/HPC_project/Anil_HPC.xpr [current_project]
   set_property ip_repo_paths {
-  /prog/Xilinx/zybo_3232_matmul
-  /prog/Xilinx/krit_3232_matmul_8block
-  /prog/Xilinx/matmul_thrice
-  /prog/Xilinx/matmul_22_ip
-  /prog/Xilinx/matmul_1010_ip
-  /prog/Xilinx/dist_calc_test1
-  /prog/Xilinx/zybo1_dist_calc
-  /prog/Xilinx/zybo1_147pt_dist
-  /prog/Xilinx/zybo1_147by147_dist
-  /prog/Xilinx/zybo1_147by147_SG
-  /prog/Xilinx/mem_sriv1
-  /prog/Xilinx/mem_sriv3
-  /prog/Xilinx/mem_sriv4
-  /prog/Xilinx/memr_sriv1
-  /prog/Xilinx/memw_sriv1
-  /prog/Xilinx/addnBYmemcpy
-  /prog/Xilinx/memcpy_arr50
-  /prog/Xilinx/memcpy_dual_s1
-  /prog/Xilinx/reuse
-  /prog/Xilinx/AB
-  /prog/Xilinx/reuse2
-  /../../../root/Desktop/program_mohit/matrix
-  /prog/Xilinx/matrix_mult
-  /prog/Xilinx/sari_hls
+  g:/my_projects/zybo_3232_matmul
+  E:/vivado_HLS_projects/matrix
+  g:/my_projects/krit_3232_matmul_8block
+  g:/my_projects/matmul_thrice
+  g:/my_projects/matmul_22_ip
+  g:/my_projects/matmul_1010_ip
+  g:/my_projects/dist_calc_test1
+  g:/my_projects/zybo1_dist_calc
+  g:/my_projects/zybo1_147pt_dist
+  g:/my_projects/zybo1_147by147_dist
+  g:/my_projects/zybo1_147by147_SG
+  g:/my_projects/mem_sriv1
+  g:/my_projects/mem_sriv3
+  g:/my_projects/mem_sriv4
+  g:/my_projects/memr_sriv1
+  g:/my_projects/memw_sriv1
+  g:/my_projects/addnBYmemcpy
+  g:/my_projects/memcpy_arr50
+  g:/my_projects/memcpy_dual_s1
+  g:/my_projects/reuse
+  g:/my_projects/AB
+  g:/my_projects/reuse2
+  c:/Users/HP/AppData/Roaming/root/Desktop/program_mohit/matrix
+  g:/my_projects/matrix_mult
+  g:/my_projects/sari_hls
 } [current_project]
-  set_property ip_output_repo /prog/Xilinx/sari_vivado/sari_vivado.cache/ip [current_project]
+  set_property ip_output_repo G:/my_projects/HPC_project/Anil_HPC.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
-  add_files -quiet /prog/Xilinx/sari_vivado/sari_vivado.runs/synth_1/design_1_wrapper.dcp
+  add_files -quiet G:/my_projects/HPC_project/Anil_HPC.runs/synth_1/design_1_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files /prog/Xilinx/sari_vivado/sari_vivado.srcs/sources_1/bd/design_1/design_1.bd
+  add_files G:/my_projects/HPC_project/Anil_HPC.srcs/sources_1/bd/design_1/design_1.bd
   set_param project.isImplRun false
-  read_xdc /prog/Xilinx/sari_vivado/sari_vivado.srcs/constrs_1/new/aa.xdc
+  read_xdc G:/my_projects/HPC_project/Anil_HPC.srcs/constrs_1/new/aa.xdc
   set_param project.isImplRun true
   link_design -top design_1_wrapper -part xc7z010clg400-1
   set_param project.isImplRun false

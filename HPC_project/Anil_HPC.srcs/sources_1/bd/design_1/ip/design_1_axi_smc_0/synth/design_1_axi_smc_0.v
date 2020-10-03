@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2019 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2020 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -52,7 +52,7 @@
 
 (* X_CORE_INFO = "bd_afc3,Vivado 2017.4" *)
 (* CHECK_LICENSE_TYPE = "design_1_axi_smc_0,bd_afc3,{}" *)
-(* CORE_GENERATION_INFO = "design_1_axi_smc_0,bd_afc3,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=smartconnect,x_ipVersion=1.0,x_ipCoreRevision=7,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,NUM_MI=3,NUM_SI=1,NUM_CLKS=1,HAS_ARESETN=1,ADVANCED_PROPERTIES=0,Component_Name=design_1_axi_smc_0}" *)
+(* CORE_GENERATION_INFO = "design_1_axi_smc_0,bd_afc3,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=smartconnect,x_ipVersion=1.0,x_ipCoreRevision=7,x_ipLanguage=VERILOG,x_ipSimLanguage=VERILOG,NUM_MI=3,NUM_SI=1,NUM_CLKS=1,HAS_ARESETN=1,ADVANCED_PROPERTIES=0,Component_Name=design_1_axi_smc_0}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_axi_smc_0 (
   aclk,
