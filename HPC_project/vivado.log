@@ -11,3 +11,88 @@
 #-----------------------------------------------------------
 start_gui
 open_project G:/my_projects/HPC_project/Anil_HPC.xpr
+INFO: [Project 1-313] Project file moved from 'E:/4_My_all_Projects/sari_vivado123' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'G:/my_projects/zybo_3232_matmul', nor could it be found using path 'E:/4_My_all_Projects/zybo_3232_matmul'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'G:/my_projects/krit_3232_matmul_8block', nor could it be found using path 'E:/4_My_all_Projects/krit_3232_matmul_8block'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'G:/my_projects/matmul_thrice', nor could it be found using path 'E:/4_My_all_Projects/matmul_thrice'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'G:/my_projects/matmul_22_ip', nor could it be found using path 'E:/4_My_all_Projects/matmul_22_ip'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'G:/my_projects/matmul_1010_ip', nor could it be found using path 'E:/4_My_all_Projects/matmul_1010_ip'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'G:/my_projects/dist_calc_test1', nor could it be found using path 'E:/4_My_all_Projects/dist_calc_test1'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'G:/my_projects/zybo1_dist_calc', nor could it be found using path 'E:/4_My_all_Projects/zybo1_dist_calc'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'G:/my_projects/zybo1_147pt_dist', nor could it be found using path 'E:/4_My_all_Projects/zybo1_147pt_dist'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'G:/my_projects/zybo1_147by147_dist', nor could it be found using path 'E:/4_My_all_Projects/zybo1_147by147_dist'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'G:/my_projects/zybo1_147by147_SG', nor could it be found using path 'E:/4_My_all_Projects/zybo1_147by147_SG'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'G:/my_projects/mem_sriv1', nor could it be found using path 'E:/4_My_all_Projects/mem_sriv1'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'G:/my_projects/mem_sriv3', nor could it be found using path 'E:/4_My_all_Projects/mem_sriv3'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'G:/my_projects/mem_sriv4', nor could it be found using path 'E:/4_My_all_Projects/mem_sriv4'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'G:/my_projects/memr_sriv1', nor could it be found using path 'E:/4_My_all_Projects/memr_sriv1'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'G:/my_projects/memw_sriv1', nor could it be found using path 'E:/4_My_all_Projects/memw_sriv1'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'G:/my_projects/addnBYmemcpy', nor could it be found using path 'E:/4_My_all_Projects/addnBYmemcpy'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'G:/my_projects/memcpy_arr50', nor could it be found using path 'E:/4_My_all_Projects/memcpy_arr50'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'G:/my_projects/memcpy_dual_s1', nor could it be found using path 'E:/4_My_all_Projects/memcpy_dual_s1'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'G:/my_projects/reuse', nor could it be found using path 'E:/4_My_all_Projects/reuse'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'G:/my_projects/AB', nor could it be found using path 'E:/4_My_all_Projects/AB'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'G:/my_projects/reuse2', nor could it be found using path 'E:/4_My_all_Projects/reuse2'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'G:/../../../../root/Desktop/program_mohit/matrix', nor could it be found using path 'E:/../../../../root/Desktop/program_mohit/matrix'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'G:/my_projects/matrix_mult', nor could it be found using path 'E:/4_My_all_Projects/matrix_mult'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'G:/my_projects/sari_hls', nor could it be found using path 'E:/4_My_all_Projects/sari_hls'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'g:/my_projects/zybo_3232_matmul'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'g:/my_projects/krit_3232_matmul_8block'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'g:/my_projects/matmul_thrice'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'g:/my_projects/matmul_22_ip'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'g:/my_projects/matmul_1010_ip'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'g:/my_projects/dist_calc_test1'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'g:/my_projects/zybo1_dist_calc'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'g:/my_projects/zybo1_147pt_dist'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'g:/my_projects/zybo1_147by147_dist'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'g:/my_projects/zybo1_147by147_SG'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'g:/my_projects/mem_sriv1'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'g:/my_projects/mem_sriv3'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'g:/my_projects/mem_sriv4'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'g:/my_projects/memr_sriv1'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'g:/my_projects/memw_sriv1'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'g:/my_projects/addnBYmemcpy'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'g:/my_projects/memcpy_arr50'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'g:/my_projects/memcpy_dual_s1'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'g:/my_projects/reuse'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'g:/my_projects/AB'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'g:/my_projects/reuse2'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'g:/root/Desktop/program_mohit/matrix'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'g:/my_projects/matrix_mult'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'g:/my_projects/sari_hls'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_sari_mmult_0_0
+
+open_project: Time (s): cpu = 00:00:41 ; elapsed = 00:01:04 . Memory (MB): peak = 821.758 ; gain = 171.941
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Oct  3 15:43:56 2020...

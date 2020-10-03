@@ -11,3 +11,4 @@
 #-----------------------------------------------------------
 start_gui
 open_project G:/my_projects/HPC_project/Anil_HPC.xpr
+update_compile_order -fileset sources_1
