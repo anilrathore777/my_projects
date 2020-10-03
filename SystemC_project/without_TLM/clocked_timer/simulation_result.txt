@@ -1,0 +1,28 @@
+[2020-04-03 04:02:36 EDT] g++ -o sim -lsystemc *.cpp  && echo "Compile done. Starting run..." && ./sim  
+Compile done. Starting run...
+
+        SystemC 2.3.1-Accellera --- Jun  1 2014 14:49:19
+        Copyright (c) 1996-2014 by all Contributors,
+        ALL RIGHTS RESERVED
+Interrupt asserted: Intr0  2761 ns	:	1
+Interrupt asserted: Intr1  5161 ns	:	1
+Interrupt asserted: Intr0  7881 ns	:	1
+Interrupt asserted: Intr1  10281 ns	:	1
+Interrupt asserted: Intr0  13001 ns	:	1
+Interrupt asserted: Intr1  15401 ns	:	1
+Interrupt asserted: Intr0  18121 ns	:	1
+===>Timer_value== 18470 ns	:			152
+===>Timer_value== 19990 ns	:			224
+===>Timer_value== 20500 ns	:			229
+Interrupt asserted: Intr1  21541 ns	:	1
+Interrupt asserted: Intr0  24261 ns	:	1
+Interrupt asserted: Intr1  26661 ns	:	1
+Interrupt asserted: Intr0  29381 ns	:	1
+===>Timer_value== 29990 ns	:			230
+Interrupt asserted: Intr1  31781 ns	:	1
+Interrupt asserted: Intr0  32801 ns	:	1
+Interrupt asserted: Intr1  36901 ns	:	1
+Interrupt asserted: Intr0  37921 ns	:	1
+Interrupt asserted: Intr0  1000481 ns	:	1
+===>Timer_value== 1000750 ns	:			26
+
